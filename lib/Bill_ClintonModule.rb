@@ -7,8 +7,8 @@ class Bill_Clinton
 
 	def initialize
 		@vocal_chords = VocalChords.new
-		@burgers_eaten = 1
-		@saxes_played = 1
+		@burgers_eaten = 0
+		@saxes_played = 0
 	end
 
 	def speak
