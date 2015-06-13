@@ -31,7 +31,6 @@ puts "\nIf you want to leave at anytime just type \'bye Bill\' or \'quit\' "
 		else
 			bill.speak
 		end
-
 		puts 
 
 	end	
