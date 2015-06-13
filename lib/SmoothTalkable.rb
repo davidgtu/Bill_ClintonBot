@@ -43,6 +43,7 @@ class VocalChords
 	def wild_quote
 		@wild_clinton[@selection.rand(@wild_clinton.length - 1)]
 	end
+	
 end
 
 end

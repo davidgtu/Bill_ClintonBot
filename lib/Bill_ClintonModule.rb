@@ -67,7 +67,6 @@ class Bill_Clinton
 		if @wild_bar > 8
 			raise "BILL NEED SLEEP. GOODBYE."
 		end
-		
 	end
 
 
