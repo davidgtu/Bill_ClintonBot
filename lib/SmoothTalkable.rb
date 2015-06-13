@@ -18,16 +18,30 @@ class VocalChords
 				    "There is nothing wrong with America that cannot be cured with what is right in America.",
 				    "You can put wings on a pig, but you don't make it an eagle.",
 				    "Being president is like running a cemetery: you've got a lot of people under you and nobody's listening.",
-				    "I did not have sexual relations with that woman",
 				    "That depends on what your definition of \'is\'' is"]
-	@billQuotes = @saxQuotes + @burgerQuotes
+
+	@wild_clinton = ["I did not have sexual relations with that woman.",
+					  "These allegations are false!",
+					  "I need to go back to work for ther American people",
+					  "I thought the definition included any activity by [me], where [I] was the actor and came in contact with those parts of the bodies",
+					  "Alright girls, I turned off the AC. First one to have a bead of neck sweat reach their butt crack wins.",
+					  "You know where I got that nipple ring? Old straddlin' Madeline Albright gave it to me.",
+					  "Now that's a cankle! Where does the calf fat end and the ankle fat begin? Who knows? That's the fuuuuun"]
+
+
+
+
+	@billQuotes = @saxQuotes + @burgerQuotes 
 	@selection = Random.new
 	end
 	def update(burgers, saxes)
 		@billQuotes = (@saxQuotes*saxes) + (@burgerQuotes*burgers)
 	end
 	def quote
-	@billQuotes[@selection.rand(@billQuotes.length - 1)]
+		@billQuotes[@selection.rand(@billQuotes.length - 1)]
+	end
+	def wild_quote
+		@wild_clinton[@selection.rand(@wild_clinton.length - 1)]
 	end
 end
 

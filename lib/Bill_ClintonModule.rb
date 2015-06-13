@@ -9,6 +9,7 @@ class Bill_Clinton
 		@vocal_chords = VocalChords.new
 		@burgers_eaten = 0
 		@saxes_played = 0
+		@wild_bar = 0
 	end
 
 	def speak
@@ -51,6 +52,22 @@ class Bill_Clinton
 		end
 
 		digest
+	end
+
+	def wild_clinton
+		@wild_bar += 1
+		puts
+		print @vocal_chords.wild_quote
+		puts
+		puts "WILD COUNT: #{@wild_bar}"
+		if @wild_bar > 5
+			puts "I think you should tone it down..."
+		end
+
+		if @wild_bar > 8
+			raise "BILL NEED SLEEP. GOODBYE."
+		end
+		
 	end
 
 
