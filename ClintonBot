@@ -9,6 +9,7 @@ puts "Welcome to the Bill Clinton simulator 1.0 !"
 puts "\nYou can ask him questions by typing them into the command line"
 puts "\nYou can feed him burgers by typing 'eat burger'"
 puts "\nOr you can ask him to play the sax for you by typing 'play sax'"
+puts "\nWant him to go wild? Type 'GO WILD!'"
 puts "\nIf you want to leave at anytime just type \'bye Bill\' or \'quit\' "
 
 	loop do
@@ -25,6 +26,8 @@ puts "\nIf you want to leave at anytime just type \'bye Bill\' or \'quit\' "
 			puts "Bye now sugar pie\n"
 			puts
 			break
+		elsif choice.include?("WILD")
+			bill.wild_clinton
 		else
 			bill.speak
 		end
